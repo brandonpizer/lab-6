@@ -190,10 +190,12 @@ summary(lm_base)
 
 
 ```
+
 ```{r}
 # Sanity Interaction term from recipe ... these should be equal!!
 summary(lm(logQmean ~ aridity + p_mean + aridity_x_p_mean, data = baked_data))
 ```
+
 ```{r}
 
 test_data <-  bake(prep(rec), new_data = camels_test)
